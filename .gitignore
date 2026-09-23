@@ -1,0 +1,6 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+terraform_*_linux_amd64*
+.terraform.tfstate.lock.info
