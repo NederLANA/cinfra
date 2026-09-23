@@ -1,6 +1,18 @@
-.terraform/
+# Terraform
+**/.terraform/
 *.tfstate
 *.tfstate.*
-*.tfstate.backup
-terraform_*_linux_amd64*
 .terraform.tfstate.lock.info
+
+# Stray Terraform installer artifacts (should be installed via PATH, not committed)
+bootstrap/terraform_*_linux_amd64.zip
+bootstrap/LICENSE.txt
+
+# Editor swap files
+*.swp
+*.swo
+*~
+*.swp
+*.swo
+*~
+bootstrap/LICENSE.txt
