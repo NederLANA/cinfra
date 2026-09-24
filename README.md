@@ -44,9 +44,9 @@ def handler(event, context):
 ```
 
 Notes:
-- Function must be named `handler` in a file named `handler.py` (otherwise pass a custom `handler` value — see below).
-- `event["body"]` is where the raw request body arrives (a string). It may arrive base64-encoded — the snippet above handles both cases.
-- Return value must include `statusCode` and `body` — this is what turns function into a working http response.
+- Function must be named `handler` in a file named `handler.py` (otherwise pass a custom `handler` value.
+- `event["body"]` is where the raw request body arrives (a string). It may arrive base64-encoded. The snippet above handles both cases.
+- Return value must include `statusCode` and `body`. This turns function into a working http response.
 
 **2. Register it in the root `main.tf`**
 
