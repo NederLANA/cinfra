@@ -50,7 +50,7 @@ resource "aws_iam_role_policy" "deploy_permissions" {
     Version = "2012-10-17"
     Statement = [{
       Effect = "Allow"
-      Action = [
+            Action = [
         "lambda:*",
         "iam:CreateRole",
         "iam:DeleteRole",
@@ -59,6 +59,9 @@ resource "aws_iam_role_policy" "deploy_permissions" {
         "iam:PutRolePolicy",
         "iam:DeleteRolePolicy",
         "iam:GetRole",
+        "iam:GetRolePolicy",
+        "iam:ListRolePolicies",
+        "iam:ListAttachedRolePolicies",
         "iam:PassRole",
         "iam:TagRole",
         "logs:*",
