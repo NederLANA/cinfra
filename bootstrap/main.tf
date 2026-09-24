@@ -34,7 +34,7 @@ resource "aws_iam_role" "github_actions_deploy" {
         }
         StringLike = {
           # Replace YOUR_GITHUB_USERNAME and REPO_NAME below
-          "token.actions.githubusercontent.com:sub" = "repo:nederlana/cinfra:*"
+          "token.actions.githubusercontent.com:sub" = "repo:NederLANA@4924632/cinfra@1382497797:*"
         }
       }
     }]
